@@ -31,7 +31,7 @@ root.render(
     <PropsEjemplos2 title="Hola caca" />
 
     <h1>Ejmplosde Props Mostrando varible</h1>
-    <PropsEjemplos3 title="wena mundo" />
+    <PropsEjemplos3 title="wena mundo" name= 'caca'/>
     <PropsEjemplos3 title="wena react" />
   </>
 );

@@ -55,7 +55,9 @@ export function PropsEjemplos2(props) {
 }
 
 //Otra forma es extraer el titulo, asi podemos evitar usar una variable y luego .algo
-export function PropsEjemplos3({title}) {
-  console.log(title)
-  return <h1>{title}</h1>
+export function PropsEjemplos3({title, name = 'user'}) {
+  console.log(title, name)
+  return <h1>{title}, {name}</h1>
 }
+
+//1;10;51 https://www.youtube.com/watch?v=rLoWMU4L_qE&t=982s
