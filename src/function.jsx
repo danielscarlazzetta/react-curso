@@ -43,3 +43,19 @@ export function SumInFunction() {
     </div>
   );
 }
+
+export function PropsEjemplos(props) {
+  console.log(props)
+  return <h1>Props</h1>
+}
+
+export function PropsEjemplos2(props) {
+  console.log(props)
+  return <h1>{props.title}</h1>
+}
+
+//Otra forma es extraer el titulo, asi podemos evitar usar una variable y luego .algo
+export function PropsEjemplos3({title}) {
+  console.log(title)
+  return <h1>{title}</h1>
+}
