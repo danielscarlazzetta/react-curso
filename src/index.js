@@ -14,6 +14,8 @@ import {
 import Producto, { UserCard } from "./Product";
 
 import Button from './Button'
+
+import TaskCard from './Task'
 const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
 
@@ -43,7 +45,8 @@ root.render(
     <h1>Ejmplosde Props Mostrando varible</h1>
     <PropsEjemplos3 title="wena mundo" name= 'caca'/>
     <PropsEjemplos3 title="wena react" /> */}
-    <UserCard
+
+    {/* <UserCard
       name="Daniel"
       amount={3000}
       married="true"
@@ -68,10 +71,12 @@ root.render(
 
     <Button text='Touch me' />
     <Button text='Pay me' />
-    <Button text='' name='joe' />
+    <Button text='' name='joe' /> */}
     {/* <Button text={300} /> */}
     {/* <Button text={{text: 'hola'}} /> */}
 
+
+    <TaskCard />
   </>
 );
 
