@@ -1,9 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import { Greeting, TruOrFalse, ObjectUser, ViewVariable, SumInFunction,
-    PropsEjemplos, PropsEjemplos2, PropsEjemplos3} from "./function";
-import Producto, {Las} from "./Product";
+import {
+  Greeting,
+  TruOrFalse,
+  ObjectUser,
+  ViewVariable,
+  SumInFunction,
+  PropsEjemplos,
+  PropsEjemplos2,
+  PropsEjemplos3,
+} from "./function";
+import Producto, { UserCard } from "./Product";
 const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
 
@@ -12,13 +20,13 @@ const root = ReactDOM.createRoot(rootElement);
 
 root.render(
   <>
-    <TruOrFalse />
+    {/* <TruOrFalse />
     <Greeting />
     <ObjectUser />
     <ViewVariable />
     <SumInFunction />
     <Producto />
-    <Las />
+    <UserCard />
     <h1>Ejmplosde Props</h1>
     <PropsEjemplos title="Hola" />
     <PropsEjemplos x = {30}/>
@@ -32,7 +40,29 @@ root.render(
 
     <h1>Ejmplosde Props Mostrando varible</h1>
     <PropsEjemplos3 title="wena mundo" name= 'caca'/>
-    <PropsEjemplos3 title="wena react" />
+    <PropsEjemplos3 title="wena react" /> */}
+    <UserCard
+      name="Daniel"
+      amount={3000}
+      married="true"
+      point={[99, 22, 33.2]}
+      address={{
+        street: "123 main street",
+        city: "New York",
+      }}
+      greet={ function () {alert('wena')}}
+    />
+    <UserCard
+      name="Leinad"
+      amount={4000}
+      married="true"
+      point={[99, 22, 33.2]}
+      address={{
+        street: "312 main street",
+        city: "New York",
+      }}
+      greet={ function () {alert('wena')}}
+    />
   </>
 );
 
