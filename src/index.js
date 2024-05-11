@@ -12,6 +12,8 @@ import {
   PropsEjemplos3,
 } from "./function";
 import Producto, { UserCard } from "./Product";
+
+import Button from './Button'
 const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
 
@@ -63,6 +65,13 @@ root.render(
       }}
       greet={ function () {alert('wena')}}
     />
+
+    <Button text='Touch me' />
+    <Button text='Pay me' />
+    <Button text='' name='joe' />
+    {/* <Button text={300} /> */}
+    {/* <Button text={{text: 'hola'}} /> */}
+
   </>
 );
 
