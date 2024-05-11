@@ -76,7 +76,7 @@ root.render(
     {/* <Button text={{text: 'hola'}} /> */}
 
 
-    <TaskCard />
+    <TaskCard ready={true}/>
   </>
 );
 
